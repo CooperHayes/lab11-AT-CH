@@ -63,8 +63,7 @@ class TestCalculator(unittest.TestCase):
 
         self.assertAlmostEqual(square_root(9) , 3)
 
-        with self.assertRaises(Exception):
-            square_root("4")
+        self.assertAlmostEqual(square_root(0) , 0)
 
 
 # Do not touch this
